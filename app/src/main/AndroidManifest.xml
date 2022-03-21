@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arpitparekh.jan12androidproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
@@ -10,20 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".designing.DesignActivity"
-            android:exported="false" />
-        <activity
-            android:name=".cordinator_layout.MyCoActivity"
-            android:exported="true">
+            android:name=".fragments.HolderActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
-            android:name=".viewBinding_dataBinding.MyDataBindActivity"
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".designing.DesignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cordinator_layout.MyCoActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".viewBinding_dataBinding.MyDataBindActivity"
+            android:exported="true" />
         <activity
             android:name=".viewBinding_dataBinding.MyActivity"
             android:exported="false" />

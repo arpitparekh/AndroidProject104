@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_goa.xml" value="0.2671875" />
+        <entry key="app/src/main/res/layout/activity_holder.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_implicit.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_mumbai.xml" value="0.29010416666666666" />
@@ -17,6 +18,9 @@
         <entry key="app/src/main/res/layout/activity_my_data_bind.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_pehli.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.29010416666666666" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/fragment_mera.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_tera.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/layout.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/layout_frame.xml" value="0.264" />
         <entry key="app/src/main/res/layout/layout_relative.xml" value="0.264" />
