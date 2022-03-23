@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".fragments.HolderActivity"
+            android:name=".switch_toggle_button.MySwitchActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -23,16 +23,22 @@
 
         </activity>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".fragment_new_way.AnotherHolderActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".fragments.HolderActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true" />
         <activity
             android:name=".designing.DesignActivity"
             android:exported="false" />
         <activity
             android:name=".cordinator_layout.MyCoActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".viewBinding_dataBinding.MyDataBindActivity"
             android:exported="true" />

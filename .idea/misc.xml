@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/design_demo.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_speed.xml" value="0.197" />
+        <entry key="app/src/main/res/layout/activity_another_holder.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_design.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.29010416666666666" />
@@ -16,10 +17,13 @@
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2890625" />
         <entry key="app/src/main/res/layout/activity_my_co.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_data_bind.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_switch.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_pehli.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="app/src/main/res/layout/fragment_mera.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/fragment_tera.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/layout.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/layout_frame.xml" value="0.264" />
