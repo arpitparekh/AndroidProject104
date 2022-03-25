@@ -7,12 +7,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
-        android:label="@string/app_name"
+        android:label="@string/Navu_name"
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".switch_toggle_button.MySwitchActivity"
+            android:name=".designing.SeekbarActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -23,13 +23,16 @@
 
         </activity>
         <activity
+            android:name=".switch_toggle_button.MySwitchActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".fragment_new_way.AnotherHolderActivity"
             android:exported="true">
 
         </activity>
         <activity
             android:name=".fragments.HolderActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true" />

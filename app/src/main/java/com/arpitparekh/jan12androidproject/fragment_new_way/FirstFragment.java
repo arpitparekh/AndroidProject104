@@ -10,6 +10,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 
 import com.arpitparekh.jan12androidproject.R;
 import com.arpitparekh.jan12androidproject.databinding.FragmentFirstBinding;
@@ -30,11 +31,29 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        binding.animationView.setVisibility(View.GONE);
+
         binding.btnGoNext.setOnClickListener(view1 -> {
 
             Navigation.findNavController(getView())
                     .navigate(R.id.action_firstFragment2_to_secondFragment);
 
+        });
+
+        binding.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if(b){
+
+                    binding.animationView.setVisibility(View.VISIBLE);
+
+                }else{
+
+                    binding.animationView.setVisibility(View.GONE);
+                }
+
+            }
         });
 
     }
