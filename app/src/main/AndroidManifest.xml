@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".designing.SeekbarActivity"
+            android:name=".menu.MyMenuActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -23,13 +23,19 @@
 
         </activity>
         <activity
-            android:name=".switch_toggle_button.MySwitchActivity"
-            android:exported="true"></activity>
+            android:name=".DemoActivity"
+            android:exported="false" />
         <activity
-            android:name=".fragment_new_way.AnotherHolderActivity"
+            android:name=".designing.SeekbarActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".switch_toggle_button.MySwitchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fragment_new_way.AnotherHolderActivity"
+            android:exported="true" />
         <activity
             android:name=".fragments.HolderActivity"
             android:exported="true" />

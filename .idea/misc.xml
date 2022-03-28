@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2890625" />
         <entry key="app/src/main/res/layout/activity_my_co.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_data_bind.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_my_switch.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_pehli.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.29010416666666666" />
@@ -31,6 +32,7 @@
         <entry key="app/src/main/res/layout/layout_relative.xml" value="0.264" />
         <entry key="app/src/main/res/layout/profile_relative.xml" value="0.264" />
         <entry key="app/src/main/res/layout/table_layout.xml" value="0.264" />
+        <entry key="app/src/main/res/menu/my_menu.xml" value="0.4" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.253" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.253" />
       </map>
