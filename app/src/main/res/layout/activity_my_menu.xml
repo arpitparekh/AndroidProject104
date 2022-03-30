@@ -15,4 +15,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:text="Show PopUp"
+        app:layout_constraintStart_toStartOf="@+id/btnContext"
+        app:layout_constraintTop_toBottomOf="@+id/btnContext" />
 </androidx.constraintlayout.widget.ConstraintLayout>

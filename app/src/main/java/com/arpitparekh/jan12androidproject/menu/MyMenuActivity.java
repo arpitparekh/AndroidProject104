@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import com.arpitparekh.jan12androidproject.R;
@@ -34,11 +35,30 @@ public class MyMenuActivity extends AppCompatActivity {
 
 
         registerForContextMenu(binding.btnContext);
+        registerForContextMenu(binding.btnPopUp);
         // 3 types of menu
 
         // option menu // actionBar
         // popup menu  // click
         // context menu  // long click
+
+        binding.btnPopUp.setOnClickListener(view -> {
+
+            PopupMenu pop = new PopupMenu(MyMenuActivity.this,view);
+
+            pop.getMenuInflater().inflate(R.menu.my_menu,pop.getMenu());
+
+            pop.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    itemSwitch(item);
+                    return false;
+                }
+            });
+
+            pop.show();
+
+        });
 
     }
 

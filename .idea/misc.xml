@@ -17,12 +17,14 @@
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2890625" />
         <entry key="app/src/main/res/layout/activity_my_co.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_data_bind.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_my_switch.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_pehli.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_seekbar.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/custom_alert.xml" value="0.4" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="app/src/main/res/layout/fragment_mera.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2609375" />

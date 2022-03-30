@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter Something"
+
+        app:helperText="Enter Properly"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+
+        app:endIconMode="password_toggle"
+
+        app:startIconTint="#FF5722"
+
+        app:startIconDrawable="@drawable/ic_speed"
+
+        app:hintTextColor="#673AB7"
+
+        app:endIconTint="#E91E63"
+
+        app:boxBackgroundColor="#72BFFD"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/custom"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
