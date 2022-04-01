@@ -53,4 +53,31 @@
         android:background="#8BC34A"
         android:layout_above="@id/btnAlert1"
         android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Picker Dialog"
+        android:layout_below="@id/btnProgress2"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnTimePicker"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Picker Dialog"
+        android:id="@+id/btnDatePicker"
+        android:layout_below="@id/btnTimePicker"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Screen"
+        android:id="@+id/btnFullScreen"
+        android:layout_above="@id/tvCustom"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"/>
+
+
 </RelativeLayout>
