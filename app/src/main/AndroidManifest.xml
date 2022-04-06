@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.arpitparekh.jan12androidproject" >
+    package="com.arpitparekh.jan12androidproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,10 +10,10 @@
         android:label="@string/Navu_name"
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Jan12AndroidProject" >
+        android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".navigation_drawer.MyDrawerActivity"
-            android:exported="true" >
+            android:name=".radioButton_textChange.CalcActivity"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +23,19 @@
 
         </activity>
         <activity
+            android:name=".radioButton_textChange.RadioTextActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".navigation_drawer.MyDrawerActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".dialog.DateTimePickerActivity"
             android:exported="false" />
         <activity
             android:name=".dialog.FullScrrenDialogActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".dialog.MyDialogActivity"
             android:exported="true" />

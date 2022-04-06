@@ -57,8 +57,6 @@ public class MyDrawerActivity extends AppCompatActivity {
 
         iv.setOnClickListener(view1 -> {
 
-
-
         });
 
 
