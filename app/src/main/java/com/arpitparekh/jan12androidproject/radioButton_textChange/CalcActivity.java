@@ -34,8 +34,6 @@ public class CalcActivity extends AppCompatActivity implements TextWatcher {
             float num1 = Float.parseFloat(number1);
             float num2 = Float.parseFloat(number2);
 
-
-
             switch(radioGroup.getCheckedRadioButtonId()){
                 case R.id.rbSum:
                     binding.tvMath.setText(String.valueOf(num1+num2));
@@ -104,9 +102,6 @@ public class CalcActivity extends AppCompatActivity implements TextWatcher {
             }
 
         }
-
-
-
 
         // string -> int //  Integer.parse(string)
         // int -> string //  String.ValueOf(int)

@@ -4,12 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_dropdown_item_1line.xml" value="0.26197916666666665" />
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/drawable/design_demo.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_speed.xml" value="0.197" />
         <entry key="app/src/main/res/layout/activity_another_holder.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_calc.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_date_time_picker.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_design.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_doctor_list.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_full_scrren_dialog.xml" value="0.23958333333333334" />
@@ -41,9 +43,11 @@
         <entry key="app/src/main/res/layout/layout.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/layout_frame.xml" value="0.264" />
         <entry key="app/src/main/res/layout/layout_relative.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/my_toolbar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/profile_relative.xml" value="0.264" />
         <entry key="app/src/main/res/layout/table_layout.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/update_doctor_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.4" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.253" />
