@@ -29,10 +29,13 @@
         <entry key="app/src/main/res/layout/activity_my_switch.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_pehli.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_radio_text.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_records.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_seekbar.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_student_list.xml" value="0.2604166666666667" />
+        <entry key="app/src/main/res/layout/books_dialog.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/books_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/custom_alert.xml" value="0.4" />
         <entry key="app/src/main/res/layout/custom_simple_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/drawer_top_layout.xml" value="0.26197916666666665" />
@@ -50,6 +53,7 @@
         <entry key="app/src/main/res/layout/profile_relative.xml" value="0.264" />
         <entry key="app/src/main/res/layout/table_layout.xml" value="0.264" />
         <entry key="app/src/main/res/layout/update_doctor_layout.xml" value="0.2604166666666667" />
+        <entry key="app/src/main/res/menu/add_menu.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.4" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.253" />
