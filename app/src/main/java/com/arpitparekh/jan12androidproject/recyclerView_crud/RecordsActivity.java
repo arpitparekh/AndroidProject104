@@ -10,6 +10,7 @@ import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.arpitparekh.jan12androidproject.R;
 import com.arpitparekh.jan12androidproject.databinding.ActivityRecordsBinding;
@@ -17,7 +18,7 @@ import com.arpitparekh.jan12androidproject.databinding.BooksDialogBinding;
 
 import java.util.ArrayList;
 
-public class RecordsActivity extends AppCompatActivity {
+public class RecordsActivity extends AppCompatActivity implements BooksAdapter.OnItemClickListener{
 
     private ActivityRecordsBinding binding;
     private ArrayList<Books> list;
@@ -35,11 +36,11 @@ public class RecordsActivity extends AppCompatActivity {
 //        binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
 //        binding.recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
 //          binding.recyclerView.setLayoutManager(new GridLayoutManager(this,2));
-          binding.recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
+        binding.recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL));
 
         list = new ArrayList<>();
 
-        adapter = new BooksAdapter(list);
+        adapter = new BooksAdapter(list,this);
 
         binding.recyclerView.setAdapter(adapter);
 
@@ -81,5 +82,14 @@ public class RecordsActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(int position) {
+
+        Books books = list.get(position);
+
+        Toast.makeText(this, books.title, Toast.LENGTH_SHORT).show();
+
     }
 }

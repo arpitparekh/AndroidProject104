@@ -1,8 +1,10 @@
 package com.arpitparekh.jan12androidproject.recyclerView_crud;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,9 +16,18 @@ import java.util.ArrayList;
 public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BooksViewHolder> {
 
     private ArrayList<Books> list;
+    private OnItemClickListener listener;
+    Context context;
 
-    BooksAdapter(ArrayList<Books> list){
+    BooksAdapter(ArrayList<Books> list,OnItemClickListener listener){
         this.list = list;
+        this.listener = listener;
+    }
+
+    interface OnItemClickListener{
+
+        void onClick(int position);  // abstract method
+
     }
 
     @NonNull
@@ -24,6 +35,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BooksViewHol
     public BooksViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         // set layout for each and every item
+        context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         BooksRowItemBinding binding = BooksRowItemBinding.inflate(inflater,parent,false);
         BooksViewHolder holder = new BooksViewHolder(binding);
@@ -34,10 +46,14 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BooksViewHol
     public void onBindViewHolder(@NonNull BooksViewHolder holder, int position) {
 
         // put data inside each and every item
-
         Books books = list.get(position);
-
         holder.binding.setObj(books);
+
+        holder.itemView.setOnClickListener(view -> {
+
+            listener.onClick(position);
+
+        });
 
     }
 
