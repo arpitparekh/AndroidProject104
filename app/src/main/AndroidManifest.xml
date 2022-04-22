@@ -13,23 +13,19 @@
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
             android:name=".recyclerView_crud.RecordsActivity"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".adapter.StudentListActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".adapter.DoctorListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".radioButton_textChange.CalcActivity"
             android:exported="true" />

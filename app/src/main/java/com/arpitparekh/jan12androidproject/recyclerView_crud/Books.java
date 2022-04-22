@@ -1,6 +1,8 @@
 package com.arpitparekh.jan12androidproject.recyclerView_crud;
 
-public class Books {
+import java.io.Serializable;
+
+public class Books implements Serializable {
 
     String title;
     String des;

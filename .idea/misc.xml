@@ -34,6 +34,7 @@
         <entry key="app/src/main/res/layout/activity_seekbar.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_student_list.xml" value="0.2604166666666667" />
+        <entry key="app/src/main/res/layout/activity_update_books.xml" value="0.4" />
         <entry key="app/src/main/res/layout/books_dialog.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/books_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/custom_alert.xml" value="0.4" />
@@ -53,9 +54,10 @@
         <entry key="app/src/main/res/layout/profile_relative.xml" value="0.264" />
         <entry key="app/src/main/res/layout/table_layout.xml" value="0.264" />
         <entry key="app/src/main/res/layout/update_doctor_layout.xml" value="0.2604166666666667" />
-        <entry key="app/src/main/res/menu/add_menu.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/menu/add_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.4" />
+        <entry key="app/src/main/res/menu/update_delete_menu.xml" value="0.16" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.253" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.253" />
       </map>
