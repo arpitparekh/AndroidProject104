@@ -31,8 +31,6 @@ public class MyResultActivity extends AppCompatActivity {
         binding = ActivityMyResultBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-
         // Activity Result Launcher
 
         ActivityResultLauncher<String> gallery = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {

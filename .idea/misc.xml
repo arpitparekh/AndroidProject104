@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/layout/activity_design.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_doctor_list.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.29010416666666666" />
+        <entry key="app/src/main/res/layout/activity_expandable.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_full_scrren_dialog.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/layout/activity_goa.xml" value="0.2671875" />
@@ -21,10 +22,13 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_mumbai.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2890625" />
+        <entry key="app/src/main/res/layout/activity_my_bottom_app_bar.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/activity_my_bottom_sheet.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_co.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_data_bind.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_internal.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_my_result.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_switch.xml" value="0.264" />
@@ -38,6 +42,7 @@
         <entry key="app/src/main/res/layout/activity_update_books.xml" value="0.4" />
         <entry key="app/src/main/res/layout/books_dialog.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/books_row_item.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.2" />
         <entry key="app/src/main/res/layout/custom_alert.xml" value="0.4" />
         <entry key="app/src/main/res/layout/custom_simple_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/drawer_top_layout.xml" value="0.26197916666666665" />

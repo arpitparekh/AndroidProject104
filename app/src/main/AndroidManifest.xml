@@ -3,7 +3,7 @@
     package="com.arpitparekh.jan12androidproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".activity_result.MyResultActivity"
-            android:exported="true" >
+            android:name=".offline_storage.MyInternalActivity"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +24,22 @@
 
         </activity>
         <activity
-            android:name=".recyclerView_crud.RecordsActivity"
+            android:name=".expnadable_toolbar.ExpandableActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".bottom_appbar_bottom_navigation.MyBottomAppBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottom_sheet.MyBottomSheetActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activity_result.MyResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerView_crud.RecordsActivity"
+            android:exported="true" />
         <activity
             android:name=".adapter.StudentListActivity"
             android:exported="true" />
