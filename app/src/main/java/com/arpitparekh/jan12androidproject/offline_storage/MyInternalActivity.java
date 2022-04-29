@@ -54,7 +54,6 @@ public class MyInternalActivity extends AppCompatActivity {
 
                 binding.tvReceiver.setText(data);
 
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
