@@ -3,21 +3,22 @@
     package="com.arpitparekh.jan12androidproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/> android 11 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
         android:label="@string/Navu_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
-        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.Jan12AndroidProject">
         <activity
-            android:name=".storage.StorageActivity"
+            android:name=".storage.SharedPrefActivity"
             android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,13 +27,16 @@
 
         </activity>
         <activity
-            android:name=".offline_storage.MyInternalActivity"
+            android:name=".storage.StorageActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".expnadable_toolbar.ExpandableActivity"
+            android:name=".offline_storage.MyInternalActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".expnadable_toolbar.ExpandableActivity"
+            android:exported="true" />
         <activity
             android:name=".bottom_appbar_bottom_navigation.MyBottomAppBarActivity"
             android:exported="false" />

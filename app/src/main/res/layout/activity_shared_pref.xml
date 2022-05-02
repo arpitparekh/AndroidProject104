@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storage.SharedPrefActivity">
+
+    <Button
+        android:id="@+id/btnStoreShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:text="Store"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFetchShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Fetch"
+        app:layout_constraintStart_toStartOf="@+id/btnStoreShared"
+        app:layout_constraintTop_toBottomOf="@+id/btnStoreShared" />
+
+    <Button
+        android:id="@+id/btnClearShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="34dp"
+        android:text="clear"
+        app:layout_constraintStart_toStartOf="@+id/btnFetchShared"
+        app:layout_constraintTop_toBottomOf="@+id/btnFetchShared" />
+
+    <TextView
+        android:id="@+id/tvShared"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClearShared" />
+</androidx.constraintlayout.widget.ConstraintLayout>
