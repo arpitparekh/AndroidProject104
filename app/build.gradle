@@ -48,7 +48,12 @@ dependencies {
 
     // navigation component
 
-    implementation("androidx.navigation:navigation-fragment:2.4.1")
-    implementation("androidx.navigation:navigation-ui:2.4.1")
+    implementation("androidx.navigation:navigation-fragment:2.4.2")
+    implementation("androidx.navigation:navigation-ui:2.4.2")
+
+    //room
+    def room_version = "2.4.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
 
 }

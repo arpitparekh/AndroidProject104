@@ -19,7 +19,7 @@ public class SharedPrefActivity extends AppCompatActivity {
 
         // primitive datatype
 
-        // int  // long // float  // boolean  // string //
+        // int // long // float  // boolean  // String //
 
         // key value pair
 
