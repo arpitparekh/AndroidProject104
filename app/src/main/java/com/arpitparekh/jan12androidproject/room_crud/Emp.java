@@ -20,4 +20,10 @@ public class Emp {
         this.name = name;
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "name= " + name+
+                "\naddress=" + address;
+    }
 }

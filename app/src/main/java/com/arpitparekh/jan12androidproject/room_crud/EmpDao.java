@@ -22,4 +22,14 @@ public interface EmpDao {
 
     @Query("select * from EmpTable")
     List<Emp> showData();
+
+    @Query("select * from emptable where name=:name")
+    List<Emp> giveParticularData(String name);
+
+    @Query("select COUNT(name) from emptable")
+    int getCount();
+
+    @Insert
+    void insertMultipleEmp(List<Emp> list);
+
 }
