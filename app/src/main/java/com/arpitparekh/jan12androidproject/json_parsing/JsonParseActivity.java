@@ -3,16 +3,21 @@ package com.arpitparekh.jan12androidproject.json_parsing;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import com.arpitparekh.jan12androidproject.databinding.ActivityJsonParseBinding;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -22,6 +27,7 @@ public class JsonParseActivity extends AppCompatActivity {
 
     private ActivityJsonParseBinding binding;
     private ArrayList<MyData> list;
+    private JSONArray jsonArray;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +43,17 @@ public class JsonParseActivity extends AppCompatActivity {
 
         // OKHttp
 
-        new Thread(new Runnable() {
+        /*
+
+         ArrayAdapter<MyData> adapter = new ArrayAdapter<>(JsonParseActivity.this, android.R.layout.simple_list_item_1,list);
+                        binding.listViewJson.setAdapter(adapter);
+
+         */
+
+        Executor executor = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        executor.execute(new Runnable() {
             @Override
             public void run() {
 
@@ -47,59 +63,41 @@ public class JsonParseActivity extends AppCompatActivity {
                         .url("https://jsonplaceholder.typicode.com/posts")
                         .build();
 
+                Response response = null;
                 try {
-                    Response response =  client.newCall(request).execute();
+                    response = client.newCall(request).execute();
+
                     Log.i("response",response.body().string());
 
                     String json = response.body().string(); // end of okhttp
 
-                    JSONArray jsonArray = new JSONArray(json);
+                                Log.i("json",json);
 
-                    for(int i=0;i< jsonArray.length();i++){
+                                jsonArray = new JSONArray(json);
 
-                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                for(int i=0;i< jsonArray.length();i++){
 
-                        String title = jsonObject.getString("title");
-                        String body = jsonObject.getString("body");
+                                    JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-                        MyData myData = new MyData(title,body);
+                                    String title = jsonObject.getString("title");
+                                    String body = jsonObject.getString("body");
 
-                        list.add(myData);
-                    }
-//
-//                    runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            Log.i("list",list.toString());
-//                            adapter.notifyDataSetChanged();
-//                        }
-//                    });
+                                    MyData myData = new MyData(title,body);
+
+
+                                    Log.i("myData",myData.toString());
+                                    list.add(myData);
+                                }
+
+                                Log.i("list",list.toString());
+
 
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    Log.i("exception",e.toString());
                 }
 
             }
-        }).start();
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(5000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        ArrayAdapter<MyData> adapter = new ArrayAdapter<>(JsonParseActivity.this, android.R.layout.simple_list_item_1,list);
-                        binding.listViewJson.setAdapter(adapter);
-                    }
-                });
-            }
-        }).start();
+        });
 
 
     }
