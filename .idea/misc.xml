@@ -32,6 +32,7 @@
         <entry key="app/src/main/res/layout/activity_my_data_bind.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_gallery.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_my_internal.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_my_result.xml" value="0.264" />
@@ -59,6 +60,7 @@
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/fragment_tera.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/full_screen_dialog.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/gallery_row_item.xml" value="0.2875" />
         <entry key="app/src/main/res/layout/layout.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/layout_frame.xml" value="0.264" />
         <entry key="app/src/main/res/layout/layout_relative.xml" value="0.264" />
