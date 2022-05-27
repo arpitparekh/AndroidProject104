@@ -52,11 +52,8 @@ public class MyGalleryActivity extends AppCompatActivity {
 
                                 GalleryAdapter adapter = new GalleryAdapter(list);
                                 binding.recyclerViewGallery.setAdapter(adapter);
-
                             }
                         });
-
-
                 }
 
                 @Override

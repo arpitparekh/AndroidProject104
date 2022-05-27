@@ -7,6 +7,8 @@
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/drawable/design_demo.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_speed.xml" value="0.197" />
+        <entry key="app/src/main/res/layout-w1240dp/activity_json_list.xml" value="0.11953125" />
+        <entry key="app/src/main/res/layout-w936dp/activity_json_list.xml" value="0.2125" />
         <entry key="app/src/main/res/layout/activity_another_holder.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_calc.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_date_time_picker.xml" value="0.26197916666666665" />
@@ -15,13 +17,16 @@
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_emp_list.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_expandable.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_faculty_list.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_full_scrren_dialog.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/layout/activity_goa.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_implicit.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_json_list.xml" value="0.28266395526182003" />
         <entry key="app/src/main/res/layout/activity_json_list2.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_json_parse.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_match_result.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_mumbai.xml" value="0.29010416666666666" />
@@ -40,6 +45,7 @@
         <entry key="app/src/main/res/layout/activity_pehli.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_radio_text.xml" value="0.4" />
         <entry key="app/src/main/res/layout/activity_records.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.4" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.29010416666666666" />
         <entry key="app/src/main/res/layout/activity_seekbar.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_shared_pref.xml" value="0.28958333333333336" />

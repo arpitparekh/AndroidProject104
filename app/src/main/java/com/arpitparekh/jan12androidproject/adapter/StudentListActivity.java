@@ -3,6 +3,8 @@ package com.arpitparekh.jan12androidproject.adapter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.SimpleAdapter;
 
 import com.arpitparekh.jan12androidproject.R;
@@ -54,6 +56,15 @@ public class StudentListActivity extends AppCompatActivity {
         SimpleAdapter adapter = new SimpleAdapter(this,list, R.layout.custom_simple_layout,from,to);
 
         binding.listViewSimpleAdapter.setAdapter(adapter);
+
+
+        binding.listViewSimpleAdapter.setOnItemClickListener((adapterView,view,pos,l)->{
+
+
+
+        });
+
+
 
     }
 }
