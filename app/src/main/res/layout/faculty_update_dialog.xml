@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNameUpdate"
+        android:hint="Enter Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSalaryUpdate"
+        android:layout_below="@id/edtNameUpdate"
+        android:inputType="number"
+        android:hint="Enter Salary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAddressUpdate"
+        android:layout_below="@id/edtSalaryUpdate"
+        android:hint="Enter Address"/>
+
+</RelativeLayout>
