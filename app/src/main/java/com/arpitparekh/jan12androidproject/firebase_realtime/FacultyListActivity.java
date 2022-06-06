@@ -113,7 +113,6 @@ public class FacultyListActivity extends AppCompatActivity {
                 binding1.edtNameUpdate.setText(faculty.name);
                 binding1.edtSalaryUpdate.setText(String.valueOf(faculty.salary));
 
-
                 new AlertDialog.Builder(FacultyListActivity.this)
                         .setTitle("Choose One")
                         .setPositiveButton("Update", new DialogInterface.OnClickListener() {

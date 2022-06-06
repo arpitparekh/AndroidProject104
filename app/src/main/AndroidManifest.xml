@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Jan12AndroidProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".firebase_realtime.FacultyListActivity"
+            android:name=".internal_external_storage.MyInternalExternalActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -28,16 +28,19 @@
 
         </activity>
         <activity
-            android:name=".firebase.RegisterActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".firebase.LoginActivity"
+            android:name=".firebase_realtime.FacultyListActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".gallery_retrofit.MyGalleryActivity"
+            android:name=".firebase.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".firebase.LoginActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".gallery_retrofit.MyGalleryActivity"
+            android:exported="true" />
         <activity
             android:name=".retrofit.MatchResultActivity"
             android:exported="true" />
