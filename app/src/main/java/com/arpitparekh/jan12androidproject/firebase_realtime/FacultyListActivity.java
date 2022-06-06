@@ -3,15 +3,19 @@ package com.arpitparekh.jan12androidproject.firebase_realtime;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.arpitparekh.jan12androidproject.R;
 import com.arpitparekh.jan12androidproject.databinding.ActivityFacultyListBinding;
 import com.arpitparekh.jan12androidproject.databinding.FacultyUpdateDialogBinding;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -32,6 +36,8 @@ public class FacultyListActivity extends AppCompatActivity {
     private DatabaseReference ref;
     private ArrayList<Faculty> list;
     private ArrayList<String> keyList;
+    ArrayAdapter<Faculty> adapter;
+    String query=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,7 +94,7 @@ public class FacultyListActivity extends AppCompatActivity {
 
                 }
 
-                ArrayAdapter<Faculty> adapter = new ArrayAdapter<>(FacultyListActivity.this,
+                adapter = new ArrayAdapter<>(FacultyListActivity.this,
                         android.R.layout.simple_list_item_1,list);
                 binding.listViewFaculty.setAdapter(adapter);
 
@@ -105,49 +111,55 @@ public class FacultyListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
 
                 Faculty faculty = list.get(pos);  // clicked faculty object
-                String key = keyList.get(pos);
 
-                binding1 = FacultyUpdateDialogBinding.inflate(getLayoutInflater());
+                if(faculty.toString().toLowerCase().contains(query)){
 
-                binding1.edtAddressUpdate.setText(faculty.address);
-                binding1.edtNameUpdate.setText(faculty.name);
-                binding1.edtSalaryUpdate.setText(String.valueOf(faculty.salary));
+                    String key = keyList.get(pos);
 
-                new AlertDialog.Builder(FacultyListActivity.this)
-                        .setTitle("Choose One")
-                        .setPositiveButton("Update", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
+                    binding1 = FacultyUpdateDialogBinding.inflate(getLayoutInflater());
 
-                                new AlertDialog.Builder(FacultyListActivity.this)
-                                        .setTitle("Update")
-                                        .setView(binding1.getRoot())
-                                        .setPositiveButton("Update", new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialogInterface, int i) {
+                    binding1.edtAddressUpdate.setText(faculty.address);
+                    binding1.edtNameUpdate.setText(faculty.name);
+                    binding1.edtSalaryUpdate.setText(String.valueOf(faculty.salary));
 
-                                                String name = binding1.edtNameUpdate.getText().toString();
-                                                String salary = binding1.edtSalaryUpdate.getText().toString();
-                                                String address = binding1.edtAddressUpdate.getText().toString();
+                    new AlertDialog.Builder(FacultyListActivity.this)
+                            .setTitle("Choose One")
+                            .setPositiveButton("Update", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
 
-                                                Faculty updatedFaculty = new Faculty(name,Float.parseFloat(salary),address);
+                                    new AlertDialog.Builder(FacultyListActivity.this)
+                                            .setTitle("Update")
+                                            .setView(binding1.getRoot())
+                                            .setPositiveButton("Update", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialogInterface, int i) {
 
-                                                //////////////////////////////////////////////
-                                                ref.child(key).setValue(updatedFaculty);
+                                                    String name = binding1.edtNameUpdate.getText().toString();
+                                                    String salary = binding1.edtSalaryUpdate.getText().toString();
+                                                    String address = binding1.edtAddressUpdate.getText().toString();
 
-                                            }
-                                        }).create().show();
+                                                    Faculty updatedFaculty = new Faculty(name,Float.parseFloat(salary),address);
 
-                            }
-                        }).setNegativeButton("Delete", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                    //////////////////////////////////////////////
+                                                    ref.child(key).setValue(updatedFaculty);
 
-                                ///////////////////////////////////////////
-                                ref.child(key).removeValue();
-                            }
-                        }).create().show();
+                                                }
+                                            }).create().show();
 
+                                }
+                            }).setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+
+                                    ///////////////////////////////////////////
+                                    ref.child(key).removeValue();
+                                }
+                            }).create().show();
+
+
+
+                }
             }
         });
 
@@ -170,8 +182,34 @@ public class FacultyListActivity extends AppCompatActivity {
                     Toast.makeText(FacultyListActivity.this,e.getMessage(),Toast.LENGTH_SHORT).show();
                 }
             });
-
-
         });
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.add_menu,menu);
+
+        MenuItem item = menu.findItem(R.id.action_search);
+
+        SearchView searchView = (SearchView) item.getActionView();
+
+        searchView.setMaxWidth(Integer.MAX_VALUE);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                query = newText;
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
 }

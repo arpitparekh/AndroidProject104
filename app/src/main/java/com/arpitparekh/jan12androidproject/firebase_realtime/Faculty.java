@@ -12,11 +12,8 @@ public class Faculty {
 
     @Override
     public String toString() {
-        return "Faculty{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                ", address='" + address + '\'' +
-                '}';
+        return "name = " + name +
+                "\nsalary = " + salary;
     }
 
     public Faculty(String name, float salary, String address) {
