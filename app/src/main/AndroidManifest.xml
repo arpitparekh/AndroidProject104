@@ -20,6 +20,11 @@
             android:name=".internal_external_storage.MyInternalExternalActivity"
             android:exported="true" >
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
 
         </activity>
@@ -27,11 +32,7 @@
             android:name=".firebase_realtime.FacultyListActivity"
             android:exported="true">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity

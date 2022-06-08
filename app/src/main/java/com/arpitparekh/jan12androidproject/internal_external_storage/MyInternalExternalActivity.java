@@ -9,6 +9,9 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.arpitparekh.jan12androidproject.databinding.ActivityMyInternal2Binding;
@@ -18,7 +21,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.security.Permission;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class MyInternalExternalActivity extends AppCompatActivity {
 
@@ -97,6 +103,83 @@ public class MyInternalExternalActivity extends AppCompatActivity {
         });
 
 
+        binding.btnExternalRead.setOnClickListener(view -> {
+
+            File sdcardFolder = Environment.getExternalStorageDirectory();
+
+            File folder = new File(sdcardFolder,"myFolder");
+
+            folder.mkdir();
+
+            File file = new File(folder,"interview.txt");
+
+            try {
+
+                FileInputStream fis = new FileInputStream(file);
+
+                byte[] arr = new byte[fis.available()];
+
+                fis.read(arr);
+
+                String result = new String(arr);
+
+                binding.tvExternal.setText(result);
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+
+            Executor executor = Executors.newSingleThreadExecutor();
+            Handler handler = new Handler(Looper.getMainLooper());
+
+            executor.execute(new Runnable() {
+                @Override
+                public void run() {
+
+                    // code
+
+                    Toast.makeText(MyInternalExternalActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(MyInternalExternalActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                    //
+
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+
+
+
+                        }
+                    });
+
+                }
+            });
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+
+                        }
+                    });
+
+                }
+            }).start();
+
+        });
+
+
 
     }
 
@@ -134,4 +217,41 @@ public class MyInternalExternalActivity extends AppCompatActivity {
         }
 
     }
+
+    @Override
+    protected void onStart() {
+
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+
+        super.onStop();
+    }
+
+    @Override
+    protected void onRestart() {
+
+
+
+        super.onRestart();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+
 }
