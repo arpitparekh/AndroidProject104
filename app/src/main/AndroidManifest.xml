@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Jan12AndroidProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".internal_external_storage.MyInternalExternalActivity"
+            android:name=".service.PlaySongActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -26,21 +26,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+        </activity>
+
+<!--        //////////////////////  service /////////////-->
+
+        <service android:name=".service.SongService"
+            android:enabled="true"/>
+        <service android:name=".service.DownloadFileService"
+            android:enabled="true"/>
+
+<!--        /////////////////////////////////////////////////////-->
+
+        <activity
+            android:name=".registration_full.FullRegistrationActivity"
+            android:exported="true">
 
         </activity>
         <activity
+            android:name=".internal_external_storage.MyInternalExternalActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".firebase_realtime.FacultyListActivity"
-            android:exported="true">
-
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".firebase.RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".firebase.LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".gallery_retrofit.MyGalleryActivity"
             android:exported="true" />
