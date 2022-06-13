@@ -58,9 +58,7 @@ public class DownloadFileService extends Service {
                     FileOutputStream fos = new FileOutputStream(file);
 
                     while((size=dis.read(arr))>0){
-
                         fos.write(arr,0,size);
-
                     }
 
                     dis.close();
